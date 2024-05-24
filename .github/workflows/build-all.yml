@@ -58,7 +58,7 @@ jobs:
   linux-x64-x:
     name: 'Linux Intel X - meson-build ${{ github.event.inputs.version }} build'
     timeout-minutes: 5760 # 4 days
-    runs-on: [self-hosted, linux, x64]
+    runs-on: ubuntu-latest
     container:
       image: ilegeul/ubuntu:amd64-18.04-xbb-v5.1.1
     defaults:
@@ -129,7 +129,7 @@ jobs:
   linux-x64-w:
     name: 'Linux Intel W - meson-build ${{ github.event.inputs.version }} build'
     timeout-minutes: 5760 # 4 days
-    runs-on: [self-hosted, linux, x64]
+    runs-on: ubuntu-latest
     container:
       image: ilegeul/ubuntu:amd64-18.04-xbb-v5.1.1
     defaults:
@@ -341,7 +341,7 @@ jobs:
     name: 'macOS Intel - meson-build ${{ github.event.inputs.version }} build'
     timeout-minutes: 2880 # 2 days
 
-    runs-on: [self-hosted, macos, intel]
+    runs-on: macos-13
 
     steps:
       - name: 'Environment'
@@ -408,7 +408,7 @@ jobs:
     name: 'macOS Arm - meson-build ${{ github.event.inputs.version }} build'
     timeout-minutes: 2880 # 2 days
 
-    runs-on: [self-hosted, macos, apple]
+    runs-on: macos-14
 
     steps:
       - name: 'Environment'

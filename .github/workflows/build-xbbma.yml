@@ -59,7 +59,7 @@ jobs:
     name: 'macOS Arm - meson-build ${{ github.event.inputs.version }} build'
     timeout-minutes: 2880 # 2 days
 
-    runs-on: [self-hosted, macos, apple]
+    runs-on: macos-14
 
     steps:
       - name: 'Environment'
