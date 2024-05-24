@@ -132,7 +132,7 @@ The xPack Meson Build generally follows the official
 The current version is based on:
 
 - Meson Build release
-[{% raw %}{{ page.upstream_version }}{% endraw %}](https://github.com/mesonbuild/meson/releases/tag/{% raw %}{{ page.upstream_version }}{% endraw %})
+[{% raw %}{{ page.upstream_version }}{% endraw %}](https://github.com/mmomtchev/meson/releases/tag/{% raw %}{{ page.upstream_version }}{% endraw %})
 from {% raw %}{{ page.upstream_release_date }}{% endraw %}.
 
 ## Changes

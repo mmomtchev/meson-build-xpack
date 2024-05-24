@@ -9,14 +9,10 @@
 
 # -----------------------------------------------------------------------------
 
-# https://mesonbuild.com
-# https://github.com/mesonbuild/meson/archive/0.55.1.tar.gz
-# https://github.com/mesonbuild/meson/releases
-# https://github.com/mesonbuild/meson/releases/download/0.55.1/meson-0.55.1.tar.gz
+# https://github.com/mmomtchev/meson/
+# https://github.com/mmomtchev/meson-build-xpack
 
-# https://archlinuxarm.org/packages/aarch64/meson/files/PKGBUILD
-
-# Sep 11 2020, "0.55.3"
+# May 24 2024, "1.4.99"
 
 # -----------------------------------------------------------------------------
 
@@ -51,12 +47,13 @@ function meson_build()
     esac
   done
 
-  local meson_src_folder_name="meson-${meson_version}"
+  #local meson_src_folder_name="meson-${meson_version}"
+  local meson_src_folder_name="meson-main"
 
   # GitHub release archive.
   local meson_archive_file_name="${meson_src_folder_name}.tar.gz"
-  # local meson_url="https://github.com/mesonbuild/meson/archive/${meson_version}.tar.gz"
-  local meson_url="https://github.com/mesonbuild/meson/releases/download/${meson_version}/${meson_archive_file_name}"
+  # local meson_url="https://github.com/mmomtchev/meson/releases/download/${meson_version}/${meson_archive_file_name}"
+  local meson_url="https://github.com/mmomtchev/meson/archive/refs/heads/main.tar.gz"
 
   local meson_folder_name="${meson_src_folder_name}"
 
